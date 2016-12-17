@@ -1,3 +1,5 @@
+#More info:
+#https://www.easycoding.org/2016/12/17/postroenie-izolinij-na-karte-mira-pri-pomoshhi-python-basemap.html
 
 # 'values' is of the format [(lat, lon, val), (lat, lon, val), ..., (lat, lon, val)]
 def show_map(values, maxvalue):
@@ -56,6 +58,9 @@ def show_map(values, maxvalue):
         llcrnrlon=MinLon, llcrnrlat=MinLat,
         urcrnrlon=MaxLon, urcrnrlat=MaxLat,
         rsphere=6371200., resolution='l', area_thresh=10000)"""
+
+    #You can see all available projections at:
+    # http://matplotlib.org/basemap/users/mapsetup.html
 
     #Fill the map
     m.drawmapboundary(fill_color='w')
